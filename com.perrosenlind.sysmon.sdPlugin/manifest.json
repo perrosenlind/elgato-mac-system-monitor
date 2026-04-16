@@ -6,7 +6,7 @@
   "Category": "System Monitor",
   "CategoryIcon": "imgs/category",
   "Icon": "imgs/plugin",
-  "URL": "https://github.com/perrosenlind/elgato-app",
+  "URL": "https://github.com/perrosenlind/elgato-mac-system-monitor",
   "CodePath": "bin/plugin.js",
   "SDKVersion": 2,
   "Software": {
