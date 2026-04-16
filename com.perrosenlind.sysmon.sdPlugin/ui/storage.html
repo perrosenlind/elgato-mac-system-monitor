@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Storage</title>
+    <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+  </head>
+  <body>
+    <sdpi-item label="Mount point">
+      <sdpi-textfield setting="mountPoint" default="/System/Volumes/Data" placeholder="/System/Volumes/Data"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Refresh interval">
+      <sdpi-textfield setting="refreshMs" default="10000" placeholder="10000" pattern="[0-9]*"></sdpi-textfield>
+      <span style="color:var(--sdpi-color-secondary,#888);font-size:11px;margin-left:4px">ms (1000–60000)</span>
+    </sdpi-item>
+    <sdpi-item label="Warning threshold">
+      <sdpi-textfield setting="warnThreshold" default="80" placeholder="80" pattern="[0-9]*"></sdpi-textfield>
+      <span style="color:var(--sdpi-color-secondary,#888);font-size:11px;margin-left:4px">% (turns yellow)</span>
+    </sdpi-item>
+    <sdpi-item label="Critical threshold">
+      <sdpi-textfield setting="critThreshold" default="92" placeholder="92" pattern="[0-9]*"></sdpi-textfield>
+      <span style="color:var(--sdpi-color-secondary,#888);font-size:11px;margin-left:4px">% (turns red)</span>
+    </sdpi-item>
+  </body>
+</html>

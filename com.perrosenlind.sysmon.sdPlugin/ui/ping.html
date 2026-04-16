@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ping</title>
+    <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+  </head>
+  <body>
+    <sdpi-item label="Host">
+      <sdpi-textfield setting="host" default="1.1.1.1" placeholder="1.1.1.1"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Timeout">
+      <sdpi-textfield setting="timeoutMs" default="2000" placeholder="2000" pattern="[0-9]*"></sdpi-textfield>
+      <span style="color:var(--sdpi-color-secondary,#888);font-size:11px;margin-left:4px">ms</span>
+    </sdpi-item>
+    <sdpi-item label="Refresh interval">
+      <sdpi-textfield setting="refreshMs" default="3000" placeholder="3000" pattern="[0-9]*"></sdpi-textfield>
+      <span style="color:var(--sdpi-color-secondary,#888);font-size:11px;margin-left:4px">ms (1000–10000)</span>
+    </sdpi-item>
+    <sdpi-item label="Warning threshold">
+      <sdpi-textfield setting="warnThreshold" default="60" placeholder="60" pattern="[0-9]*"></sdpi-textfield>
+      <span style="color:var(--sdpi-color-secondary,#888);font-size:11px;margin-left:4px">ms (turns yellow)</span>
+    </sdpi-item>
+    <sdpi-item label="Critical threshold">
+      <sdpi-textfield setting="critThreshold" default="150" placeholder="150" pattern="[0-9]*"></sdpi-textfield>
+      <span style="color:var(--sdpi-color-secondary,#888);font-size:11px;margin-left:4px">ms (turns red)</span>
+    </sdpi-item>
+    <sdpi-item>
+      <p style="color:var(--sdpi-color-secondary,#888);font-size:11px;">
+        Turns red when host is unreachable. Yellow when connectivity is degrading.
+      </p>
+    </sdpi-item>
+  </body>
+</html>

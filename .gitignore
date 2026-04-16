@@ -1,0 +1,8 @@
+node_modules/
+com.perrosenlind.sysmon.sdPlugin/bin/
+com.perrosenlind.sysmon.sdPlugin/node_modules
+com.perrosenlind.sysmon.sdPlugin/logs/
+*.log
+*.streamDeckPlugin
+.DS_Store
+.streamDeck/

@@ -1,0 +1,29 @@
+{
+  "name": "sysmon-streamdeck",
+  "version": "0.1.0",
+  "description": "Stream Deck plugin showing macOS system stats (CPU, GPU, memory, storage, ping, network).",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "icons": "node scripts/gen-icons.mjs",
+    "preview": "node scripts/preview.mjs",
+    "deploy": "node scripts/deploy.mjs",
+    "pack": "node scripts/pack.mjs"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "^1.2.0",
+    "@napi-rs/canvas": "^0.1.53",
+    "systeminformation": "^5.22.11"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.14.0",
+    "rollup": "^4.18.0",
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.3"
+  }
+}

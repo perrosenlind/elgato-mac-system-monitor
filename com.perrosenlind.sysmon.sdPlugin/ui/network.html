@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Network</title>
+    <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+  </head>
+  <body>
+    <sdpi-item label="Interface">
+      <sdpi-textfield setting="iface" placeholder="blank = auto-detect active"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Display">
+      <sdpi-select setting="direction" default="both">
+        <option value="both">Download + Upload (two bars)</option>
+        <option value="down">Download only (single bar)</option>
+        <option value="up">Upload only (single bar)</option>
+      </sdpi-select>
+    </sdpi-item>
+    <sdpi-item label="Unit">
+      <sdpi-select setting="unit" default="auto">
+        <option value="auto">Auto (scales automatically)</option>
+        <option value="bps">bps</option>
+        <option value="Kbps">Kbps</option>
+        <option value="Mbps">Mbps</option>
+        <option value="Gbps">Gbps</option>
+      </sdpi-select>
+    </sdpi-item>
+    <sdpi-item label="Refresh interval">
+      <sdpi-textfield setting="refreshMs" default="1500" placeholder="1500" pattern="[0-9]*"></sdpi-textfield>
+      <span style="color:var(--sdpi-color-secondary,#888);font-size:11px;margin-left:4px">ms (500–10000)</span>
+    </sdpi-item>
+  </body>
+</html>

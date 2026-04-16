@@ -1,0 +1,106 @@
+{
+  "Name": "System Monitor",
+  "Version": "0.1.0.0",
+  "Author": "perrosenlind",
+  "Description": "Shows live macOS system stats — CPU, GPU, memory, storage, ping, network — one metric per key.",
+  "Category": "System Monitor",
+  "CategoryIcon": "imgs/category",
+  "Icon": "imgs/plugin",
+  "URL": "https://github.com/perrosenlind/elgato-app",
+  "CodePath": "bin/plugin.js",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.5"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "UUID": "com.perrosenlind.sysmon",
+  "Actions": [
+    {
+      "Name": "CPU",
+      "UUID": "com.perrosenlind.sysmon.cpu",
+      "Icon": "imgs/actions/cpu",
+      "Tooltip": "CPU usage",
+      "PropertyInspectorPath": "ui/cpu.html",
+      "States": [
+        {
+          "Image": "imgs/actions/cpu",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "GPU",
+      "UUID": "com.perrosenlind.sysmon.gpu",
+      "Icon": "imgs/actions/gpu",
+      "Tooltip": "GPU usage",
+      "PropertyInspectorPath": "ui/gpu.html",
+      "States": [
+        {
+          "Image": "imgs/actions/gpu",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Memory",
+      "UUID": "com.perrosenlind.sysmon.memory",
+      "Icon": "imgs/actions/memory",
+      "Tooltip": "Memory usage",
+      "PropertyInspectorPath": "ui/memory.html",
+      "States": [
+        {
+          "Image": "imgs/actions/memory",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Storage",
+      "UUID": "com.perrosenlind.sysmon.storage",
+      "Icon": "imgs/actions/storage",
+      "Tooltip": "Disk usage",
+      "PropertyInspectorPath": "ui/storage.html",
+      "States": [
+        {
+          "Image": "imgs/actions/storage",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Ping",
+      "UUID": "com.perrosenlind.sysmon.ping",
+      "Icon": "imgs/actions/ping",
+      "Tooltip": "Ping latency to a remote host",
+      "PropertyInspectorPath": "ui/ping.html",
+      "States": [
+        {
+          "Image": "imgs/actions/ping",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Network",
+      "UUID": "com.perrosenlind.sysmon.network",
+      "Icon": "imgs/actions/network",
+      "Tooltip": "Network download/upload throughput",
+      "PropertyInspectorPath": "ui/network.html",
+      "States": [
+        {
+          "Image": "imgs/actions/network",
+          "TitleAlignment": "middle"
+        }
+      ]
+    }
+  ]
+}
